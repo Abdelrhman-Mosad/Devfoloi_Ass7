@@ -1,0 +1,341 @@
+body{
+    background-color: #F5F5F5;
+}
+
+header .header_wp{
+    background-image: linear-gradient(rgba(0,0,0,.6), rgba(0,0,0,.6)), url(../img/hero-bg.jpg);
+    background-size: cover;
+    background-position: center center;
+}
+
+
+header .header_wp h1{
+    font-size: 3rem;
+    font-weight: 600;
+}
+
+
+header .header_wp p::after{
+    content: '|';
+    animation: text-play 4s infinite;
+    color: #ffff;
+    font-size: 1.5rem;
+}
+
+.logo_size{
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+/************ nav bar ****************/
+nav ul{
+    font-weight: 500;
+    font-size: 1.1rem;
+}
+
+nav ul li{
+    padding: 5px 0px 5px 20px;
+}
+
+nav ul li:hover a{
+    border-bottom: #ffff 2px solid;
+}
+
+.navbar-nav .nav-link.active, .navbar-nav .nav-link.show {
+    color: var(--bs-navbar-active-color);
+    border-bottom: #ffff 2px solid;
+}
+
+
+
+/************** header title style ***************/
+
+.header_style::after{
+    content: '';
+    width: 60px;
+    height: 3px;
+    position: absolute;
+    background-color: #0078FF;
+    transform: translateX(-50%);
+}
+
+.hd_style_sec h2::after {
+    content:"";
+    width: 100px;
+    height: 5px;
+    background-color: #0078FF;
+    position: absolute;
+    bottom: 5px;
+    left: 0px;
+
+}
+
+
+
+/********************* Services section *********************/
+.serv_wp .icon_wp{
+    width: 120px;
+    height: 120px;
+    border: 10px #0078FF solid;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px auto 5px;
+}
+
+
+.serv_wp .serv_item{
+
+}
+
+.serv_item:hover .icon_wp{
+    border: 10px #CDE1F8 solid;
+    color: #ffff;
+    background-color: #0078FF;
+}
+
+
+/************** work section *********************/
+.work_wp{
+    background-image: linear-gradient(rgba(47, 127, 217,.7), rgba(47, 127, 217,.7)) , url(../img/counters-bg.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    padding: 100px 0px;
+}
+
+.work_wp .icon_wp{
+    width: 80px;
+    height: 80px;
+    border: 10px #ffff solid;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px auto 5px;
+    color: #ffff;
+}
+
+
+
+
+/************** protoflio section *********************/
+
+.protoflio_item img{
+    transition: all .5s;
+}
+
+.protoflio_item .p_item_content p span{
+    color:#0078FF;
+}
+
+.protoflio_item:hover img{
+    transform: scale(1.2);
+}
+
+
+#protoflio .protoflio_testmonial{
+    background-image: linear-gradient(rgba(47, 127, 217,.8), rgba(47, 127, 217,.8)) , url(../img/overlay-bg.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    padding: 100px 0px;
+}
+
+.carousel-indicators [data-bs-target] {
+    width:20px;
+    height: 20px;
+    border-radius: 50%;
+}
+
+
+/************** blog ***************/
+#blog .blog_items .blog_item span{
+    top:100%;
+    left:50%;
+    transform: translate(-50%, -50%) scale(1.5);
+}
+
+#blog .blog_items .blog_item a{
+    text-decoration: none;
+    transition: all .5s ease-out;
+}
+
+#blog .blog_items .blog_item a:hover{
+    color: #0078FF;
+}
+
+#blog .blog_items .blog_item .b_item_footer img{
+    width: 15%;
+}
+
+
+
+/************** Contact ***************/
+#contact{
+    background-image: linear-gradient(rgba(47, 127, 217,.8), rgba(47, 127, 217,.8)) , url(../img/overlay-bg.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    padding: 100px 0px;
+}
+
+
+#contact .right_part .cobtact_links .icon_wp{
+    width: 50px;
+    height: 50px;
+    border: 3px #0078FF solid;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 10px 0px 10px;
+    transition: all .5s;
+}
+
+#contact .right_part .cobtact_links .icon_wp a{
+    transform: scale(1.5);
+    color: #4e4e4e;
+    transition: all .5s;
+}
+
+#contact .right_part .cobtact_links .icon_wp:hover{
+    border: 3px #CDE1F8 solid;
+    background-color: #0078FF;
+}
+
+#contact .right_part .cobtact_links .icon_wp:hover a{
+    color: #F5F5F5;
+
+}
+
+/************** fonts ***************/
+
+.sec_hed_main_f{
+    font-weight: 700;
+    color:#1e1e1e;
+    font-size: 3rem;
+}
+
+.sec_hed_f{
+    font-weight: 500;
+    color:#1e1e1e;
+    font-size: 2rem;
+}
+
+.sec_sub_f{
+    font-weight: 600;
+    color:#1e1e1e;
+    font-size: 1.1rem;
+}
+
+.sec_sub_lg_f{
+    font-weight: 600;
+    color:#1e1e1e;
+    font-size: 1.4rem;
+}
+
+.sec_normal_f{
+    font-weight: 400;
+    color:#4e4e4e;
+    font-size: 1rem;
+}
+
+.sec_normal_lg_f{
+    font-weight: 400;
+    color:#4e4e4e;
+    font-size: 1.25rem;
+}
+
+
+/**************** Animations *********************/
+@keyframes text-play {
+    0%{
+        content: 'D|';
+    }
+    4%{
+        content: 'De|';
+    }
+    8%{
+        content: 'Dev|';
+    }
+    12%{
+        content: 'Devl|';
+    }
+    16%{
+        content: 'Devlo|';
+    }
+    20%{
+        content: 'Devlop|';
+    }
+    24%{
+        content: 'Devlope|';
+    }
+    28%{
+        content: 'Devloper|';
+    }
+    32%{
+        content: 'Devlope|';
+    }
+    36%{
+        content: 'Devlop|';
+    }
+    40%{
+        content: 'Devlo|';
+    }
+    44%{
+        content: 'Dev|';
+    }
+
+    49%{
+        content: '|';
+    }
+
+    50%{
+        content: '|';
+    }
+
+    50%{
+        content: 'D|';
+    }
+    54%{
+        content: 'De|';
+    }
+    58%{
+        content: 'Des|';
+    }
+    62%{
+        content: 'Desi|';
+    }
+    66%{
+        content: 'Desig|';
+    }
+    70%{
+        content: 'Design|';
+    }
+    74%{
+        content: 'Designe|';
+    }
+    78%{
+        content: 'Designer|';
+    }
+    82%{
+        content: 'Designe|';
+    }
+    86%{
+        content: 'Design|';
+    }
+    90%{
+        content: 'Desig|';
+    }
+    93%{
+        content: 'Desi|';
+    }
+    96%{
+        content: 'De|';
+    }
+    100%{
+        content: 'D|';
+    }
+}
